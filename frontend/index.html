@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula Commerce</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+  <header class="nav glass">
+    <h1>Nebula Commerce</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./pages/products.html">Products</a>
+      <a href="./pages/account.html">Account</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Scale your business with premium digital products.</h2>
+      <p>Fast checkout, secure accounts, and enterprise-ready architecture.</p>
+      <a class="btn" href="./pages/products.html">Explore Products</a>
+    </section>
+    <section id="contact" class="panel glass reveal">
+      <h3>Contact Sales</h3>
+      <form id="contactForm">
+        <input name="name" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p id="contactStatus"></p>
+    </section>
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
