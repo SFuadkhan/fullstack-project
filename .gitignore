@@ -1,0 +1,155 @@
+# =========================
+
+# Node modules
+
+# =========================
+
+node_modules/
+
+# =========================
+
+# Build outputs
+
+# =========================
+
+dist/
+build/
+out/
+
+# =========================
+
+# Logs
+
+# =========================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+
+# Environment variables
+
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+
+# TypeScript
+
+# =========================
+
+*.tsbuildinfo
+
+# =========================
+
+# Coverage
+
+# =========================
+
+coverage/
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# IDEs & Editors
+
+# =========================
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# =========================
+
+# Cache / temp
+
+# =========================
+
+.tmp/
+.temp/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# =========================
+
+# Frontend specific (React/Vite/etc.)
+
+# =========================
+
+vite.svg
+
+# =========================
+
+# Testing
+
+# =========================
+
+jest.config.ts
+coverage/
+
+# =========================
+
+# Misc
+
+# =========================
+
+*.pem
+*.key
+*.crt
+
+# =========================
+
+# Docker
+
+# =========================
+
+docker-compose.override.yml
+
+# =========================
+
+# Local databases / storage
+
+# =========================
+
+*.sqlite
+*.sqlite3
+
+# =========================
+
+# Supabase local (if used)
+
+# =========================
+
+.supabase/
+
+# =========================
+
+# Mac hidden files
+
+# =========================
+
+.AppleDouble
+.LSOverride
