@@ -4,9 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "vite build",
+    "dev": "vite"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -51,8 +50,11 @@
     "dotenv": "^17.4.2",
     "embla-carousel-react": "8.6.0",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.4.1",
+    "helmet": "^8.1.0",
     "input-otp": "1.4.2",
     "lucide-react": "0.487.0",
+    "mongoose": "^9.6.1",
     "morgan": "^1.10.1",
     "motion": "12.23.24",
     "next-themes": "0.4.6",
@@ -75,8 +77,6 @@
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
     "tailwindcss": "4.1.12",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^6.0.3",
     "vite": "6.3.5"
   },
   "peerDependencies": {

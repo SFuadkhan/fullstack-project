@@ -1,33 +1,24 @@
 # =========================
 
-# Node modules
+# Node.js
 
 # =========================
 
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # =========================
 
-# Build outputs
+# Build / dist
 
 # =========================
 
 dist/
 build/
 out/
-
-# =========================
-
-# Logs
-
-# =========================
-
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
 # =========================
 
@@ -41,19 +32,12 @@ pnpm-debug.log*
 
 # =========================
 
-# TypeScript
+# Logs
 
 # =========================
 
-*.tsbuildinfo
-
-# =========================
-
-# Coverage
-
-# =========================
-
-coverage/
+logs/
+*.log
 
 # =========================
 
@@ -66,18 +50,34 @@ Thumbs.db
 
 # =========================
 
-# IDEs & Editors
+# IDE / Editor
 
 # =========================
 
 .vscode/*
-!.vscode/extensions.json
 !.vscode/settings.json
+!.vscode/extensions.json
 .idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+
+# =========================
+
+# TypeScript
+
+# =========================
+
+*.tsbuildinfo
+
+# =========================
+
+# Testing
+
+# =========================
+
+coverage/
 
 # =========================
 
@@ -88,27 +88,28 @@ Thumbs.db
 .tmp/
 .temp/
 .cache/
-.parcel-cache/
+
+# =========================
+
+# Frontend (React/Vite/etc.)
+
+# =========================
+
+client/node_modules/
+client/dist/
+client/build/
 .next/
 .nuxt/
 .svelte-kit/
 
 # =========================
 
-# Frontend specific (React/Vite/etc.)
+# MongoDB local data (IMPORTANT)
 
 # =========================
 
-vite.svg
-
-# =========================
-
-# Testing
-
-# =========================
-
-jest.config.ts
-coverage/
+data/db/
+*.mongodb
 
 # =========================
 
@@ -122,34 +123,9 @@ coverage/
 
 # =========================
 
-# Docker
+# Docker (if you retry later)
 
 # =========================
 
+.docker/
 docker-compose.override.yml
-
-# =========================
-
-# Local databases / storage
-
-# =========================
-
-*.sqlite
-*.sqlite3
-
-# =========================
-
-# Supabase local (if used)
-
-# =========================
-
-.supabase/
-
-# =========================
-
-# Mac hidden files
-
-# =========================
-
-.AppleDouble
-.LSOverride

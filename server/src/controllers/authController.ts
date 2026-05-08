@@ -107,13 +107,16 @@ export const getMe = async (req: AuthRequest, res: Response): Promise<void> => {
     }
 
     res.json({
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-      role: user.role,
-      isActive: user.isActive,
-      createdAt: user.createdAt,
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        isActive: user.isActive,
+        createdAt: user.createdAt,
+      }
     });
+
   } catch (error) {
     console.error('Get user error:', error);
     res.status(500).json({ error: 'Error fetching user profile' });
